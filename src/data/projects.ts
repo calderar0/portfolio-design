@@ -279,6 +279,32 @@ export const projects: Project[] = [
       ],
     },
   },
+  {
+    id: 'observatorio-rede-buriti',
+    client: 'Observatório Rede Buriti',
+    summary: {
+      pt: 'Observatório de saúde para pessoas com síndrome de Down: dados do SUS em gráficos e mapas acessíveis, em linguagem simples, e cuidados para cada idade.',
+      en: 'A health observatory for people with Down syndrome: public health data in accessible charts and maps, in plain language, plus care guides for every age.',
+    },
+    services: ['interfaces', 'dev'],
+    year: '2026',
+    size: 'wide',
+    cover: '/portfolio/observatorio/telas/04-nascimentos.webp',
+    site: {
+      url: 'https://calderar0.github.io/observatorio-redeburitisd/',
+      video: '/portfolio/observatorio/navegacao.mp4',
+      poster: '/portfolio/observatorio/poster.webp',
+      pages: [
+        { name: { pt: 'Conheça o observatório', en: 'About the observatory' }, screen: '/portfolio/observatorio/telas/01-conheca.webp', full: '/portfolio/observatorio/paginas/01-conheca.webp' },
+        { name: { pt: 'Cuidados: bebê', en: 'Care: babies' }, screen: '/portfolio/observatorio/telas/02-bebe.webp', full: '/portfolio/observatorio/paginas/02-bebe.webp' },
+        { name: { pt: 'Cuidados: adulto', en: 'Care: adults' }, screen: '/portfolio/observatorio/telas/03-adulto.webp', full: '/portfolio/observatorio/paginas/03-adulto.webp' },
+        { name: { pt: 'Nascimentos', en: 'Births' }, screen: '/portfolio/observatorio/telas/04-nascimentos.webp', full: '/portfolio/observatorio/paginas/04-nascimentos.webp' },
+        { name: { pt: 'Falecimentos', en: 'Deaths' }, screen: '/portfolio/observatorio/telas/05-falecimentos.webp', full: '/portfolio/observatorio/paginas/05-falecimentos.webp' },
+        { name: { pt: 'Gripe', en: 'Flu' }, screen: '/portfolio/observatorio/telas/06-gripe.webp', full: '/portfolio/observatorio/paginas/06-gripe.webp' },
+        { name: { pt: 'Hospitais', en: 'Hospitals' }, screen: '/portfolio/observatorio/telas/07-hospitais.webp', full: '/portfolio/observatorio/paginas/07-hospitais.webp' },
+      ],
+    },
+  },
 ];
 
 // Identificador usado nas pastas convertidas: 'Alba 01' → 'alba-01'.
