@@ -24,6 +24,8 @@ export type Project = {
   own?: boolean;
   summary: { pt: string; en: string };
   services: Category[];
+  // Ferramentas e tecnologias usadas (ex.: 'Figma', 'Canva', 'Godot 4').
+  tools?: string[];
   year: string;
   size: 'wide' | 'tall' | 'normal';
   cover: string;
@@ -70,6 +72,7 @@ export const projects: Project[] = [
       en: 'A platformer set on a fake desktop: stretch, cut and drag windows and icons to help an endangered little bird build its nest.',
     },
     services: ['jogos', 'dev'],
+    tools: ['Godot 4'],
     year: '2026',
     size: 'wide',
     cover: '/portfolio/quito/poster.webp',
@@ -105,6 +108,7 @@ export const projects: Project[] = [
       en: 'A pixel art action game: Bai Hua, Keeper of the Ether, crosses the realms of five elements with her cat to face the force of the void.',
     },
     services: ['jogos', 'dev'],
+    tools: ['Godot 4'],
     year: '2026',
     size: 'wide',
     cover: '/portfolio/fragments-of-eter/poster.webp',
@@ -136,6 +140,7 @@ export const projects: Project[] = [
       en: 'A website with a product catalog and management, plus Instagram content that tells the story of natural fermentation.',
     },
     services: ['interfaces', 'dev', 'social'],
+    tools: ['Figma', 'HTML', 'Tailwind CSS', 'JavaScript', 'Canva'],
     year: '2026',
     size: 'wide',
     cover: '/portfolio/paes-de-sal.png',
@@ -150,6 +155,7 @@ export const projects: Project[] = [
       en: 'Instagram content, from the countdown to the grand opening to events, in the brand’s playful voice.',
     },
     services: ['social'],
+    tools: ['Canva'],
     year: '2026',
     size: 'tall',
     cover: '/portfolio/sets/alba-08/1.webp',
@@ -164,6 +170,7 @@ export const projects: Project[] = [
       en: 'A company website and Instagram content on digestive health, with editorial photography.',
     },
     services: ['interfaces', 'dev', 'social'],
+    tools: ['Figma', 'HTML', 'Tailwind CSS', 'JavaScript', 'Canva'],
     year: '2025–2026',
     size: 'wide',
     cover: '/portfolio/dracarolinegastro.png',
@@ -178,6 +185,7 @@ export const projects: Project[] = [
       en: 'A complete brand identity and educational Instagram content, with the same visual language in every post.',
     },
     services: ['identidade', 'social'],
+    tools: ['Figma', 'Canva'],
     year: '2024–2026',
     size: 'normal',
     cover: '/portfolio/ID-Michaela.png',
@@ -192,6 +200,7 @@ export const projects: Project[] = [
       en: 'Brand identity and an online store for a custom stationery shop, with a catalog, product customization and a cart.',
     },
     services: ['identidade', 'interfaces', 'dev'],
+    tools: ['Figma', 'Next.js', 'NestJS', 'Canva'],
     year: '2025',
     size: 'normal',
     cover: '/portfolio/ID-Papel-Laranja.png',
@@ -217,6 +226,7 @@ export const projects: Project[] = [
       en: 'Carousels that highlight every detail of handmade cake toppers, from the studio to the party.',
     },
     services: ['social'],
+    tools: ['Canva'],
     year: '2025–2026',
     size: 'normal',
     cover: '/portfolio/sets/angel-02/1.webp',
@@ -232,6 +242,7 @@ export const projects: Project[] = [
       en: 'A personal finance web app: budgeting by pots, statement import, shared rides, investments and history in one dashboard.',
     },
     services: ['interfaces', 'dev'],
+    tools: ['React', 'Electron'],
     year: '2026',
     size: 'normal',
     cover: '/portfolio/gastos/telas/01-dashboard.webp',
@@ -261,6 +272,7 @@ export const projects: Project[] = [
       en: 'An app to split road trip costs: fuel calculated by distance and mileage, tolls, parking and settling up.',
     },
     services: ['interfaces', 'dev'],
+    tools: ['React'],
     year: '2026',
     size: 'normal',
     cover: '/portfolio/divisao-de-viagem/telas/02-visao-geral.webp',
@@ -287,6 +299,7 @@ export const projects: Project[] = [
       en: 'A health observatory for people with Down syndrome: public health data in accessible charts and maps, in plain language, plus care guides for every age.',
     },
     services: ['interfaces', 'dev'],
+    tools: ['Figma', 'Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     year: '2026',
     size: 'wide',
     cover: '/portfolio/observatorio/telas/04-nascimentos.webp',
@@ -302,6 +315,29 @@ export const projects: Project[] = [
         { name: { pt: 'Falecimentos', en: 'Deaths' }, screen: '/portfolio/observatorio/telas/05-falecimentos.webp', full: '/portfolio/observatorio/paginas/05-falecimentos.webp' },
         { name: { pt: 'Gripe', en: 'Flu' }, screen: '/portfolio/observatorio/telas/06-gripe.webp', full: '/portfolio/observatorio/paginas/06-gripe.webp' },
         { name: { pt: 'Hospitais', en: 'Hospitals' }, screen: '/portfolio/observatorio/telas/07-hospitais.webp', full: '/portfolio/observatorio/paginas/07-hospitais.webp' },
+      ],
+    },
+  },
+  {
+    id: 'gynocare',
+    client: 'Clínica Gynocare',
+    summary: {
+      pt: 'Site para uma clínica de ecografia: especialidades, procedimentos, convênios, perguntas frequentes e agendamento online.',
+      en: 'A website for an ultrasound clinic: specialties, procedures, insurance plans, FAQ and online booking.',
+    },
+    services: ['interfaces'],
+    tools: ['Figma'],
+    year: '2025',
+    size: 'normal',
+    cover: '/portfolio/gynocare/telas/03-especialidades.webp',
+    site: {
+      pages: [
+        { name: { pt: 'Especialidades', en: 'Specialties' }, screen: '/portfolio/gynocare/telas/03-especialidades.webp', full: '/portfolio/gynocare/paginas/03-especialidades.webp' },
+        { name: { pt: 'Procedimentos', en: 'Procedures' }, screen: '/portfolio/gynocare/telas/04-procedimentos.webp', full: '/portfolio/gynocare/paginas/04-procedimentos.webp' },
+        { name: { pt: 'Convênios', en: 'Insurance plans' }, screen: '/portfolio/gynocare/telas/02-convenios.webp', full: '/portfolio/gynocare/paginas/02-convenios.webp' },
+        { name: { pt: 'Perguntas frequentes', en: 'FAQ' }, screen: '/portfolio/gynocare/telas/05-faq.webp', full: '/portfolio/gynocare/paginas/05-faq.webp' },
+        { name: { pt: 'Agendamento', en: 'Booking' }, screen: '/portfolio/gynocare/telas/06-agendar.webp', full: '/portfolio/gynocare/paginas/06-agendar.webp' },
+        { name: { pt: 'Início', en: 'Home' }, screen: '/portfolio/gynocare/telas/01-home.webp', full: '/portfolio/gynocare/paginas/01-home.webp' },
       ],
     },
   },

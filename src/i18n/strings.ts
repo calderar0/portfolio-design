@@ -62,6 +62,7 @@ const pt = {
     trailer: 'Trailer do jogo',
     credits: 'Equipe',
     promo: 'Divulgação',
+    tools: 'Ferramentas',
   },
   contact: {
     title: 'Vamos conversar',
@@ -132,6 +133,7 @@ const en: typeof pt = {
     trailer: 'Game trailer',
     credits: 'Team',
     promo: 'Promo art',
+    tools: 'Tools',
   },
   contact: {
     title: 'Let’s talk',

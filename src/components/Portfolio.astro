@@ -89,6 +89,7 @@ const count = (c: (typeof categories)[number]) => projects.filter((p) => p.servi
                     {p.site && <li>{s.site}</li>}
                     {p.identity && <li>{s.identity}</li>}
                     {nCarousels > 0 && <li>{s.carousels(nCarousels)}</li>}
+                    {p.tools?.map((tool) => <li class="tag-tool">{tool}</li>)}
                   </ul>
                   <span>{p.year}</span>
                 </div>
@@ -351,6 +352,10 @@ const count = (c: (typeof categories)[number]) => projects.filter((p) => p.servi
     font-size: 0.88rem;
   }
 
+  .w-meta > span {
+    white-space: nowrap;
+  }
+
   .tags {
     display: flex;
     flex-wrap: wrap;
@@ -362,6 +367,11 @@ const count = (c: (typeof categories)[number]) => projects.filter((p) => p.servi
     border: 1px solid var(--line);
     border-radius: 999px;
     font-size: 0.82rem;
+  }
+
+  .tags .tag-tool {
+    border-color: transparent;
+    background: color-mix(in srgb, var(--nevoa) 30%, transparent);
   }
 
   .tags .tag-award {

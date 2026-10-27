@@ -34,6 +34,13 @@ const game = p.game;
           {p.own && <span>{s.own}</span>}
           <span>{p.year}</span>
         </p>
+        {p.tools && (
+          <ul class="tools" aria-label={s.tools}>
+            {p.tools.map((tool) => (
+              <li>{tool}</li>
+            ))}
+          </ul>
+        )}
         {game?.award && <p class="award">{game.award[lang]}</p>}
       </div>
       <button type="button" class="case-close" data-close aria-label={s.close}>
@@ -319,6 +326,19 @@ const game = p.game;
     color: var(--noite);
     font-weight: 500;
     font-size: 0.95rem;
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tools li {
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--nevoa) 14%, transparent);
+    font-size: 0.88rem;
   }
 
   .case-close {
